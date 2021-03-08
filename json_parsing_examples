@@ -1,0 +1,24 @@
+- name: Test
+  hosts: localhost
+  gather_facts: false
+  
+  vars:
+    vpn_info: "[
+        {
+            "c2s_local_nets": null,
+            "p1_dh_group": "5",
+            "p1_lifetime": 86400,
+            "p1_proposal": "aes256-sha256",
+            "p2_dh_group": "5",
+            "p2_lifetime": 3600,
+            "p2_proposal": "aes256-sha256",
+            "preshared_key": "12345678",
+            "tenant_id": "87",
+            "timestamp": "2021-03-05T13:16:25",
+            "vpn_local_gw": "186.190.248.190",
+            "vpn_name": "87_TESTVPN",
+            "vpn_remote_gw": "20.20.20.20",
+            "vpn_remote_nets": "192.168.111.0/24"
+        }
+    ]"
+    
